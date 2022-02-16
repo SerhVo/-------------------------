@@ -67,6 +67,7 @@ h1, h2, h3, p {
 
 .navigation {
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
@@ -77,6 +78,7 @@ h1, h2, h3, p {
 
 .navigation__list {
     display: flex;
+    align-items:center;
     text-transform: uppercase;
     margin-right: 14px;
 }
