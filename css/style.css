@@ -224,7 +224,7 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     align-items:center;
-    line-height: 11px;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
@@ -247,10 +247,6 @@ h1, h2, h3, p {
     padding-left: 60px;
 }
 
-    .footer__links {
-    line-height: 13px;
-    text-align: center;
-    font-size: 14px;
 }
 
 @media (max-width: 768px) {
