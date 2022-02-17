@@ -247,6 +247,10 @@ h1, h2, h3, p {
     padding-left: 60px;
 }
 
+    .footer {
+    line-height: 13px;
+    text-align: center;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
