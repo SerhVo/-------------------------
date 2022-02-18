@@ -74,12 +74,12 @@ h1, h2, h3, p {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    z-index: 600;
 
 }
 
 .navigation__list {
     display: flex;
-    
     text-transform: uppercase;
     margin-right: 14px;
 }
@@ -223,7 +223,7 @@ h1, h2, h3, p {
 }
 
 .footer {
-    height: 70px;
+    height: 50px;
     position: relative;
     z-index: 500;
     padding: 10px 0;
@@ -251,7 +251,7 @@ h1, h2, h3, p {
 }
 
 .slider-main {
-    height: calc(100% - 120px);
+    height: calc(100% - 100px);
 }
 
 .slider-main__item {
@@ -320,8 +320,13 @@ h1, h2, h3, p {
         width: 20px;
         height: 12px;
         background-color: transparent;
+        border: none;
         background-image: url('../img/menu.svg');
         bottom: none;
+    }
+
+    .burger:hover {
+        background-color:#E90000;
     }
 
     .navigation {
@@ -337,11 +342,11 @@ h1, h2, h3, p {
         padding-top: 90px;
         text-align: center;
         align-items: stretch;
+        transition: transform 0.3s ease-in-out;
     }
 
     .navigation_active {
         transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
     }
 
     .navigation__list {
@@ -371,6 +376,11 @@ h1, h2, h3, p {
         background-image: url('../img/close.svg');
         background-color: transparent;
         border: none;
+    }
+
+    .navigation__close:hover {
+        transform: translate(0, 0) rotate(175deg);
+        transition: transform 0.5s;
     }
 
     .social {

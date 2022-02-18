@@ -1,7 +1,28 @@
+// Бургер меню
+const burger = document.querySelector('.burger');
+const navigation = document.querySelector('.navigation');
+const navigationClose = document.querySelector('.navigation__close');
+
+burger.addEventListener('click', () => {
+    navigation.classList.add('navigation_active');  
+});
+
+navigationClose.addEventListener('click', () => {
+    navigation.classList.remove('navigation_active');  
+
+});
+
+
+//Музыка
+const mute = document.querySelector('.mute__checkbox');
+
+
+
+try {
 const sliderThumbs = new Swiper('.slider-thumbs', {
     loop: true,
     spaceBetween: 20,
-    slidesPerView: 3,    
+    slidesPerView: 3,
     centeredSlides: true,
     loopedSlides: 4,
 });
@@ -18,3 +39,6 @@ const sliderMain = new Swiper('.slider-main', {
 
 sliderThumbs.controller.control = sliderMain;
 sliderMain.controller.control = sliderThumbs;
+} catch {
+    console.log('На этой странице нет слайдера')
+}
